@@ -24,6 +24,14 @@ def comma_code(user_list):
     str_op+=' and '+user_list[l-1]
     return str_op
 
+def picture_grid(grid):
+    n_row,n_col = len(grid),len(grid[0])
+    for i in range(0,n_col):
+        for j in range(0,n_row):
+            print(grid[j][i],end='')
+        print('\n')
+    
+
 def displayInventory(inventory):
     print("Inventory:")
     item_total = 0
@@ -33,6 +41,24 @@ def displayInventory(inventory):
     print("Total number of items: " + str(item_total))
 
 def addToInventory(inventory,addedItems):
+    for i in range(0,len(addedItems)):
+        if addedItems[i] in inventory.keys():
+            inventory[addedItems[i]]+=1
+        else:
+            inventory[addedItems[i]] = 1
+    return inventory
+            
+            
+def printable(tableData):
+    newTable = np.zeros((len(tableData[0]),len(tableData)))
+    colWidths = [0] * len(tableData)
+    for i in range(0,len(tableData)):
+        colWidths[i] = max(tableData[i], key=len)
+    largest = max(colWidths, key=len)
+    for i in range(0,len(tableData)):
+        for j in range(0,len(tableData[0])):
+            newTable[i][j] = tableData[j][i].rjust(len(largest))
+
     
     
         
@@ -47,8 +73,18 @@ if __name__ == "__main__":
     str_op = comma_code(user_list)
     
     grid = input("Enter list elements separated by comma ")
-    grid = grid.split()
-    
+    picture_grid(grid)
+
     stuff = {'rope': 1, 'torch': 6, 'gold coin': 42, 'dagger': 1, 'arrow': 12}
     displayInventory(stuff)
+    
+    inv = {'gold coin': 42, 'rope': 1}
+    dragonLoot = ['gold coin', 'dagger', 'gold coin', 'gold coin', 'ruby']
+    inv = addToInventory(inv, dragonLoot)
+    displayInventory(inv)
+    
+    tableData = [['apples', 'oranges', 'cherries', 'banana'],
+                 ['Alice', 'Bob', 'Carol', 'David'],
+                 ['dogs', 'cats', 'moose', 'goose']] 
+    
     
