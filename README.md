@@ -1,7 +1,7 @@
-# DIY-Python-Projects (being populated with increasing order of difficulty)
+# DIY-Python-Projects (being populated)
 This repository contains pet DIY problems sourced from the web/books. 100% original codes (clarity helps, never hurts)
 
-A brief description of the functions are given below:
+A brief description of the functions (ranked in increasing order of difficulty) are given below:
 
 **collatz()**: 
 It is conjectured but not yet proven that no matter which positive integer we start with; we always end up with 1.
