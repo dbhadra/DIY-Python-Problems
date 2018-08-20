@@ -1,4 +1,4 @@
-# DIY-Python-Projects (being populated)
+# DIY-Python-Projects (being populated with increasing order of difficulty)
 This repository contains pet DIY problems sourced from the web/books. 100% original codes (clarity helps, never hurts)
 
 A brief description of the functions are given below:
