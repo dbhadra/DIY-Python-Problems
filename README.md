@@ -35,12 +35,17 @@ Write a function named printTable() that takes a list of lists of strings and di
 For example, the value could look like this:
 
 tableData = [['apples', 'oranges', 'cherries', 'banana'],
+
 ['Alice', 'Bob', 'Carol', 'David'],
+
 ['dogs', 'cats', 'moose', 'goose']]
 
 Your printTable() function would print the following:
 
 apples Alice dogs
+
 oranges Bob cats
+
 cherries Carol moose
+
 banana David goose
