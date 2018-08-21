@@ -1,4 +1,3 @@
-
 **password_detect()**
 
 Write a function that uses regular expressions to make sure the password string it is passed is strong. A strong password is 
