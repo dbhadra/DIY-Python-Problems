@@ -1,5 +1,5 @@
 # DIY-Python-Projects (being populated)
-This repository contains pet DIY problems sourced from the web/books. 90% original codes 10% help from Stackoverflow :) 
+This repository contains pet DIY problems sourced from the web/books. Shout out to Stackoverflow for the occasional help :) 
 
 A brief description of the functions (ranked in increasing order of difficulty) are given below:
 
