@@ -32,9 +32,9 @@ for i in range(0, len(df)-26912):
         if df.Dist.iloc[i] < temp1:
             #df.Facility.iloc[i] = idx[j]
             df.Facility.iloc[i] = (p1[0],p1[1])
+            df.Facility_city.iloc[i] = df.city.iloc[idx[j]]
         temp1 = df.Dist.iloc[i]
         j+=1
-    df.Facility_city.iloc[i] = df.city.iloc[idx[j]]
     j = 0            
     temp1 = 1e10
         
